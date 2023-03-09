@@ -1,0 +1,50 @@
+/* HEADER */
+.team-heading {
+    background-color: #4f7cdb;
+    color: white;
+}
+
+/* TEAM CARD SECTION */
+
+.container {
+    padding: 0px 40px;
+}
+
+.card-container {
+    padding: 0px 10px;
+    margin: 20px 0px;
+}
+
+.employee-card {
+    flex-grow: 1;
+}
+
+.card-header h2 {
+    font-size: 20px;
+}
+
+.card-header h3 {
+    font-size: 18px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.manager {
+    background-color: #3d51ca;
+    color: white;
+}
+
+.engineer {
+    background-color: #4fc7c6;
+    color: white;
+}
+
+.intern {
+    background-color: #5ee2ba;
+    color: white;
+}
+

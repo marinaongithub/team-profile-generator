@@ -104,7 +104,7 @@ function init() {
 
                     // creates a new Employee, type depending on the user previous input
                     team.push(new Engineer(newMember.name, newMember.id, newMember.email, newMember.extraInfo));
-                    console.log(newMember);
+                    // console.log(newMember);
                 }
 
                 // update extraInfo wording to 'school' if the new member to add is an intern
@@ -116,14 +116,19 @@ function init() {
 
                     // creates a new Employee, type depending on the user previous input
                     team.push(new Intern(newMember.name, newMember.id, newMember.email, newMember.extraInfo));
-                    console.log(newMember);
+                    // console.log(newMember);
                 }
 
+                // uptade employee type depending on user input
                 employeeType = newMember.employeeType;
 
-                console.log(team);
-            }               
+                // console.log(team);
+            }     
+            fs.writeFile(outputPath, render(team), (error) => {
+                error ? console.error(error) : console.log("Generating team.html...");
+            });    
     })
+    
 }
 
 
